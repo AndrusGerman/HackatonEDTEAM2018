@@ -1,0 +1,31 @@
+{
+  "name": "EDHACK",
+  "version": "1.0.0",
+  "description": "La app de ED Hacka",
+  "author": "Andrus R Diaz Aleman",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "@nuxtjs/axios": "^5.0.0",
+    "cross-env": "^5.2.0",
+    "fs": "^0.0.1-security",
+    "net": "^1.0.2",
+    "node-geocoder": "^3.22.0",
+    "nuxt": "^2.0.0",
+    "tls": "^0.0.1",
+    "vue-native-websocket": "^2.0.12",
+    "vuetify": "^1.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}
