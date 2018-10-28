@@ -46,7 +46,7 @@
           
 
           <v-tooltip v-model="show" top>
-          <v-btn  @click="atender(props.item)" slot="activator" icon>
+          <v-btn  @click="culminar(props.item)" slot="activator" icon>
             <v-icon color="grey lighten-1">cloud_done</v-icon>
           </v-btn>
           <span>Culminar..</span>
@@ -119,8 +119,29 @@
   
       },
       atender(item){
-          this.edit=true;
-          this.defaultItem=item;
+            let data = JSON.stringify({stateId:2,complaintId:item.id});
+            axios.post('http://127.0.0.1:3333/api/v1/complaints/state',data,{
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'bearer ' +this.$store.state.token
+        }
+      }).then(v=>{
+          this.initialize()
+        })
+        
+
+      },
+      culminar(item){
+            let data = JSON.stringify({stateId:2,complaintId:item.id});
+            axios.post('http://127.0.0.1:3333/api/v1/complaints/state',data,{
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'bearer ' +this.$store.state.token
+        }
+      }).then(v=>{
+          this.initialize();
+        })
+
       }
     }
   }
