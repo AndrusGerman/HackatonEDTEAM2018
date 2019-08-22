@@ -81,7 +81,7 @@
       :fixed="fixed"
       app
     >
-      <span>&copy; 2017, EdHack </span>
+      <span>&copy; 2019W, EdHack </span>
     </v-footer>
   </v-app>
 </template>
