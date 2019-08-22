@@ -1,7 +1,7 @@
 {
-  "name": "EDHACK",
+  "name": "ed_hack",
   "version": "1.0.0",
-  "description": "La app de ED Hacka",
+  "description": "La app de ED Hack 2018",
   "author": "Andrus R Diaz Aleman",
   "private": true,
   "scripts": {
